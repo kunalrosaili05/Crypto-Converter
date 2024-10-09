@@ -169,7 +169,7 @@ const App = () => {
 
   return (
     <div>
-      <div id="dzapText">DZap</div>
+      <div id="currencyText">Currency Converter</div>
       <div id="cryptoConverter">
         <h2>Crypto Converter</h2>
         <label htmlFor="fromCurrency">From:</label>

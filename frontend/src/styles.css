@@ -31,14 +31,36 @@ body {
     #a2eccf;
 }
 
-#dzapText {
+#currencyText {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 2em;
   color: #2ecc71;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adding a subtle shadow for depth */
   animation: float 3s infinite ease-in-out;
+  transition: transform 0.5s ease-in-out;
+
+  /* Smoky white border */
+  border: 1cm solid rgba(255, 255, 255, 0.5); /* Increased border width to 1cm */
+  border-radius: 8px; /* Optional: add rounded corners */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), /* Outer white glow */
+              0 0 20px rgba(255, 255, 255, 0.5); /* Soft inner glow */
+  padding: 10px; /* Add padding to ensure text doesn't touch the border */
+}
+
+/* Keyframes for the floating effect */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* Move the heading up slightly */
+  }
+  100% {
+    transform: translateY(0); /* Return to the original position */
+  }
 }
 
 #cryptoConverter {
@@ -50,6 +72,8 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   margin: auto;
 }
+
+
 
 h2 {
   color: #3498db;
